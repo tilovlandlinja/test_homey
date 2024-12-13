@@ -1,0 +1,45 @@
+{
+  "id": "linja_priser",
+  "name": {
+      "en": "Linja Priser Sensor",
+      "no": "Linja Priser Sensor"
+  },
+  "class": "sensor",
+  "capabilities": ["measure.price"],
+  "mobile": {
+      "components": [
+          {
+              "id": "icon",
+              "capabilities": ["measure.price"]
+          }
+      ]
+  },
+  "settings": [
+      {
+          "id": "api_key",
+          "type": "text",
+          "label": {
+              "en": "API Key",
+              "no": "API-nøkkel"
+          },
+          "hint": {
+              "en": "Enter your API key for Linja",
+              "no": "Skriv inn din API-nøkkel for Linja"
+          },
+          "required": true
+      },
+      {
+          "id": "metering_point_id",
+          "type": "text",
+          "label": {
+              "en": "Metering Point ID",
+              "no": "Målernummer"
+          },
+          "hint": {
+              "en": "Enter the Metering Point ID",
+              "no": "Skriv inn målernummeret ditt"
+          },
+          "required": true
+      }
+  ]
+}

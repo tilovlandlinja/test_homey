@@ -1,0 +1,24 @@
+{
+  "id": "no.linja.priser",
+  "name": {
+      "en": "Linja Priser",
+      "no": "Linja Priser"
+  },
+  "description": {
+      "en": "Fetch grid prices from Linja",
+      "no": "Henter nettleiepriser fra Linja"
+  },
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "author": {
+      "name": "Your Name",
+      "email": "your_email@example.com"
+  },
+  "drivers": [
+      {
+          "id": "linja_priser",
+          "name": "Linja Priser Sensor",
+          "class": "sensor"
+      }
+  ]
+}
