@@ -5,7 +5,9 @@
       "no": "Linja Priser Sensor"
   },
   "class": "sensor",
-  "capabilities": ["measure.price"],
+  "capabilities": [
+      "measure.price"
+  ],
   "mobile": {
       "components": [
           {
