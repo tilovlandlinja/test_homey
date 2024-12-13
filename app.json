@@ -11,8 +11,8 @@
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "author": {
-      "name": "Your Name",
-      "email": "your_email@example.com"
+      "name": "Tor Inge Løvland",
+      "email": "tor.lovland@linja.no"
   },
   "drivers": [
       {
