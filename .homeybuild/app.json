@@ -1,24 +1,103 @@
 {
-  "id": "com.linja.priser",
-  "name": {
-      "en": "Linja Priser",
-      "no": "Linja Priser"
-  },
-  "description": {
-      "en": "Fetch power prices from Linja",
-      "no": "Henter strømpriser fra Linja"
-  },
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "no.linja.nettleie",
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
-  "author": {
-      "name": "Your Name",
-      "email": "your_email@example.com"
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Linja Priser",
+    "no": "Linja Priser"
   },
+  "description": {
+    "en": "Fetch power prices from Linja",
+    "no": "Henter strømpriser fra Linja"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Tor Inge Løvland",
+    "email": "tilovland@gmail.com"
+  },
+  "brandColor": "#FF5733",
   "drivers": [
-      {
-          "id": "linja_priser",
-          "name": "Linja Priser Sensor",
-          "class": "sensor"
-      }
-  ]
+    {
+      "name": {
+        "en": "Linja priser"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "meter_cost_capacity"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/linja_priser/assets/images/small.png",
+        "large": "/drivers/linja_priser/assets/images/large.png",
+        "xlarge": "/drivers/linja_priser/assets/images/xlarge.png"
+      },
+      "settings": [
+        {
+          "id": "api_key",
+          "type": "text",
+          "label": {
+            "en": "API Key",
+            "no": "API-nøkkel"
+          },
+          "hint": {
+            "en": "Enter your API key for Linja",
+            "no": "Skriv inn din API-nøkkel for Linja"
+          },
+          "required": true
+        },
+        {
+          "id": "metering_point_id",
+          "type": "text",
+          "label": {
+            "en": "Metering Point ID",
+            "no": "Målernummer"
+          },
+          "hint": {
+            "en": "Enter the Metering Point ID",
+            "no": "Skriv inn målernummeret ditt"
+          },
+          "required": true
+        }
+      ],
+      "id": "linja_priser"
+    }
+  ],
+  "capabilities": {
+    "meter_cost_capacity": {
+      "type": "number",
+      "title": {
+        "en": "Sum electricity and grid price",
+        "no": "Sum strøm- og nettleiepris"
+      },
+      "desc": {
+        "en": "Sum electricity and grid price",
+        "no": "Sum strøm- og nettleiepris"
+      },
+      "decimals": 5,
+      "units": {
+        "en": "NOK/kWh",
+        "no": "kr/kWh"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": false,
+      "uiComponent": null
+    }
+  }
 }

@@ -1,20 +1,22 @@
 {
-  "id": "linja_priser",
   "name": {
-      "en": "Linja Priser Sensor",
-      "no": "Linja Priser Sensor"
+    "en": "Linja priser"
   },
   "class": "sensor",
-  "capabilities": [
-      "measure.price"
+  "$extends": [
+    "defaults"
   ],
-  "mobile": {
-      "components": [
-          {
-              "id": "icon",
-              "capabilities": ["measure.price"]
-          }
-      ]
+  "capabilities": [
+    "meter_cost_capacity"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
   },
   "settings": [
       {
@@ -44,4 +46,5 @@
           "required": true
       }
   ]
+  
 }

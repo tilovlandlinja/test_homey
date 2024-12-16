@@ -1,0 +1,54 @@
+{
+  "id": "no.linja.nettleie",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Linja Priser",
+    "no": "Linja Priser"
+  },
+  "description": {
+    "en": "Fetch power prices from Linja",
+    "no": "Henter strømpriser fra Linja"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Tor Inge Løvland",
+    "email": "tilovland@gmail.com"
+  },
+  "brandColor": "#FF5733",
+  "capabilities": {
+    "meter_cost_capacity": {
+      "type": "number",
+      "title": {
+        "en": "Daily cost/consumption",
+        "no": "Daglig kost/forbruk"
+      },
+      "desc": {
+        "en": "Daily cost (NOK) per cosumption (kWh)",
+        "no": "Daglig kost (NOK) pr. forbruk (kWh)"
+      },
+      "decimals": 5,
+      "units": {
+        "en": "NOK/kWh",
+        "no": "kr/kWh"
+      },
+      "getable": true,
+      "setable": false,
+      "greyout": true,
+      "insights": true,
+      "icon": "/assets/pricetag.svg"
+    }
+  }
+}
